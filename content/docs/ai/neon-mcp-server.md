@@ -7,7 +7,7 @@ summary: >-
   Server, enabling users to execute commands and make schema changes through
   natural language without coding.
 enableTableOfContents: true
-updatedOn: '2026-04-24T10:03:58.000Z'
+updatedOn: '2026-06-04T21:25:54.530Z'
 ---
 
 The **Neon MCP Server** is an open-source tool that lets you interact with your Neon Postgres databases in **natural language**:
@@ -104,6 +104,15 @@ The Neon MCP server provides powerful database tools. We recommend MCP for **dev
 - Avoid exposing production or PII data; use anonymized data only
 - Always review and authorize LLM-requested actions before execution
 - Restrict MCP access to trusted users and regularly audit access
+
+### Allowlist IP addresses
+
+The hosted Neon MCP Server (`mcp.neon.tech`) connects to your Neon databases from the following static IP addresses:
+
+- `34.192.103.46`
+- `23.22.233.166`
+
+If [IP Allow](/docs/introduction/ip-allow) is enabled on your project, add these addresses to your allowlist so the MCP server can connect.
 
 ## Resources
 

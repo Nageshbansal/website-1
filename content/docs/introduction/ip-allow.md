@@ -6,7 +6,7 @@ summary: >-
   specified IP addresses, enhancing security by preventing unauthorized
   connections and allowing configuration for individual IPs or ranges.
 enableTableOfContents: true
-updatedOn: '2026-02-06T22:07:33.091Z'
+updatedOn: '2026-06-04T21:25:54.530Z'
 ---
 
 Neon's IP Allow feature, available with the Neon [Scale](/docs/introduction/plans) plan, ensures that only trusted IP addresses can connect to the project where your database resides, preventing unauthorized access and helping maintain overall data security. You can limit access to individual IP addresses, IP ranges, or IP addresses and ranges defined with [CIDR notation](/docs/reference/glossary#cidr-notation).
@@ -14,6 +14,14 @@ Neon's IP Allow feature, available with the Neon [Scale](/docs/introduction/plan
 You can configure **IP Allow** in your Neon project's settings. To get started, see [Configure IP Allow](/docs/manage/projects#configure-ip-allow).
 
 ![IP Allow configuration](/docs/manage/ip_allow.png)
+
+## Neon services to allowlist
+
+If IP Allow is enabled on your project, add the following IP addresses to allow connections from Neon hosted services:
+
+| Service                                     | IP addresses                     |
+| ------------------------------------------- | -------------------------------- |
+| [Neon MCP Server](/docs/ai/neon-mcp-server) | `34.192.103.46`, `23.22.233.166` |
 
 ## IP Allow together with Protected Branches
 
